@@ -82,7 +82,6 @@ describe("Get Statement Operation", () => {
         Authorization: `Bearer ${body.token}`,
       });
 
-    // expect(response.status).toBe(404);
     expect(response.body).toMatchObject({ message: "Statement not found" });
   });
 

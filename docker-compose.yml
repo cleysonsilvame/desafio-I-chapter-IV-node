@@ -3,7 +3,7 @@ version: "3.7"
 services:
   database:
     image: postgres:alpine
-    container_name: database_c
+    container_name: database_fin_api
     ports:
       - 5432:5432
     restart: always

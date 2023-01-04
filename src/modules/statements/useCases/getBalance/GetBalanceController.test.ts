@@ -62,6 +62,7 @@ describe("Get Balance", () => {
       });
 
     delete statementResponse.user_id;
+    delete statementResponse.sender_id
 
     expect(response.body).toMatchObject({
       balance: statement.amount,
